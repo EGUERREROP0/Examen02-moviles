@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailRegister">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contacto_guardado"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Icono"
+            android:src="@drawable/person" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombres"
+            android:textSize="18sp" />
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Icono"
+            android:src="@drawable/person" />
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/apellidos"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Icono"
+            android:src="@drawable/ic_telf" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_de_celular"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/icon5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Icono"
+            android:src="@drawable/ic_maps" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/adrees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/direccion1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+    <ImageButton
+        android:id="@+id/ibLlamar"
+        android:layout_weight="1"
+        android:src="@drawable/ic_telf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageButton
+        android:id="@+id/ibWsp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_whats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageButton
+        android:id="@+id/ibMaps"
+        android:layout_weight="1"
+        android:src="@drawable/ic_maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
